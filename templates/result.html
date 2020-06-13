@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if prediction==1 %}
+    <h3 style="color:rgb(0, 102, 255)">Prediction: Oh no! This is a SPAM message.</h3>
+{% else %}
+    <h3 style="color:rgb(0, 102, 255)">Prediction: Great! This is NOT a SPAM message.</h3>
+{% endif %}
+
+{% endblock %}
